@@ -1,0 +1,40 @@
+Difference between HTTP/1.1 and HTTP/2 are:
+
+HTTP/1.1:
+-Ithe usest works on the textual format.
+-There is head of line blocking that blocks all the requests behind it until it doesn’t get its all resources.	
+-It uses requests resource Inlining for use getting multiple pages	
+-It compresses data by itself.	
+
+HTTP/2
+-It works on the binary protocol.
+-It allows multiplexing so one TCP connection is required for multiple requests.
+-It uses PUSH frame by server that collects all multiple pages 
+-It uses HPACK for data compression.
+
+
+
+
+
+Notes: 
+
+-Most of the internet runs HTTP 1.1/1.0 and people are comfortable with it. While most web server applications support HTTP 2.0, they still require to be updated and configured to do so. Why put effort into what works already.
+
+-HTTP2 is more secure as it uses binary protocol instead of plaintext. HTTP/2 allows the user to have a better web experience by reducing the page load time considerably. It needs the header to be sent just once in binary codes to increase speed.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Objects
+
+Objects in programming can be a combination of variables, functions, and data structures. This means that objects can store values, you can use objects to manipulate values and combine them into more complex objects, like arrays and still get all the benefits. JavaScript is no different.
+
+
+The JavaScript [object Object] is a string representation of an object. To see the contents of an object, you should print the object to the console using console. log() or convert the object to a string. Or, you can use a for…in loop to iterate over the object and see its contents
+
+
+Create JavaScript Object with Object Literal
+
+One of easiest way to create a javascript object is object literal, simply define the property and values inside curly braces as shown below
+
+let bike = {name: 'SuperSport', maker:'Ducati', engine:'937cc'};
